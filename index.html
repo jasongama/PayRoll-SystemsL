@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PayRollapp</title>
+    <link href="PayRoll.css" rel="stylesheet" type="text/css">
+    <link href="simple-grid.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+    <script type="text/x-template" class="userTemplate">
+        <tr>
+                <td>Employee's Name:</td>
+                <td>{{firstName}}</td>
+    
+    
+        </tr>
+        <tr>
+                <td>Basic Salary:</td>
+                <td>{{BasicSalary}}</td>
+    
+    
+        </tr>
+
+
+  </script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pay Roll System</h1>
+        <div class="row">Name
+            <input type="text" class="fname" placeholder="Enter your name" name="" value="" id="field_1">
+        </div>
+
+
+        <div class="col-12">Work Rate
+            <input type="text" class="emp_work_Rate" placeholder="Enter your work rate " name="" value="" id="field_1">
+        </div>
+
+        <div class="col-11">Days of work
+            <input type="text" class="no_days" placeholder="Enter numbers of days " name="" value="" id="field_1">
+        </div>
+        <div class="col-10">
+            <button class="AddButton" type="button" name="submit" value="emp_input"> submit</button>
+        </div>
+
+        <table>
+            <tbody class = "userData">
+
+            </tbody>
+</body>
+
+<script src="PayRoll-logic.js" charset="utf-8"></script>
+<script src="PayRoll.js" charset="utf-8"></script>
+
+</html>
